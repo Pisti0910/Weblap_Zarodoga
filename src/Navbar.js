@@ -36,9 +36,6 @@ const Navbar = () => {
         <Link to="/Rangok" className="link" onClick={() => setMenuOpen(false)}>
           Rangok
         </Link>
-        <Link to="/RangokModosit" className="link" onClick={() => setMenuOpen(false)}>
-          Rangok módosítás
-        </Link>
       </div>
       <button className="logoutButton" onClick={handleLogout}>
         Kijelentkezés

@@ -6,7 +6,6 @@ import Diagram from './Diagram';
 import Login from './Login';
 import Belepes from './Belepes';
 import Rangok from './Rangok';
-import RangokModosit from './RangokModosit';
 
 const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem('token');
@@ -55,14 +54,6 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Rangok />
-            </ProtectedRoute>
-          } 
-        />
-        <Route 
-          path="/RangokModosit" 
-          element={
-            <ProtectedRoute>
-              <RangokModosit />
             </ProtectedRoute>
           } 
         />

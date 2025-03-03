@@ -17,6 +17,7 @@ const Open = () => {
       <Navbar />
       <div style={styles.content}>
         <h1>Üdvözlünk a védett oldalon!</h1>
+        <p>Készítette: Gaál István és Szilágyi István Marcell</p>
       </div>
     </div>
   );
