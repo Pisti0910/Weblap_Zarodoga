@@ -9,6 +9,7 @@ const Diagram = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    alert("hello")
     // Fetch data from backend
     fetch('http://localhost:5000/Belepesek') // Módosítsd az URL-t, ha szükséges
       .then((response) =>  {
@@ -18,6 +19,7 @@ const Diagram = () => {
         return response.json();
       })
       .then((data) => {
+        alert(JSON.stringify(data))
         const x = data.map((item) => item.felh_email); // Példa: kategóriák az x tengelyhez
         const y = data.map((item) => item.Belepes);    // Példa: szavazatok az y tengelyhez
 
