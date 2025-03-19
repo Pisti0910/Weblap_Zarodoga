@@ -10,7 +10,7 @@ const Diagram = () => {
 
   useEffect(() => {
     // Fetch data from backend
-    fetch('http://localhost:3000/Belepesek') // Módosítsd az URL-t, ha szükséges
+    fetch('http://localhost:5000/Belepesek') // Módosítsd az URL-t, ha szükséges
       .then((response) =>  {
         if (!response.ok) {
           throw new Error('Hálózati hiba történt');

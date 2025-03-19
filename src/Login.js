@@ -8,7 +8,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/web/login', {
+      const response = await fetch('http://localhost:5000/web/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

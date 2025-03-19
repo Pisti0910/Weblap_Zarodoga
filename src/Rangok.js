@@ -5,7 +5,7 @@ const Rangok = () => {
     const [adatok, setAdatok] = useState([]);
 
     const letoltes = async () => {
-        let x = await fetch("http://localhost:3000/Rangok");
+        let x = await fetch("http://localhost:5000/Rangok");
         let y = await x.json();
         setAdatok(y);
     };
@@ -15,7 +15,7 @@ const Rangok = () => {
     }, []);
 
     const rangModositas = async (email, ujRang) => {
-        await fetch(`http://localhost:3000/Rangok/${email}`, {
+        await fetch(`http://localhost:5000/Rangok/${email}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

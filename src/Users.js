@@ -7,7 +7,7 @@ const Users = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3000/felhasznalok')
+    fetch('http://localhost:5000/felhasznalok')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Hiba történt az adatok lekérésekor');
